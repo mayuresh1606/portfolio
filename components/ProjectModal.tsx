@@ -1,9 +1,10 @@
 // components/ProjectModal.tsx
 "use client";
+import { ProjectModalProps } from "@/interfaces";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt, FaTimes } from "react-icons/fa";
 
-export default function ProjectModal({ project, isOpen, onClose }) {
+export default function ProjectModal({ project, isOpen, onClose }: ProjectModalProps) {
     if (!isOpen) return null;
 
     return (
@@ -29,7 +30,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                     <p className="text-muted-foreground mb-4">{project.details}</p>
 
                     <div className="flex flex-wrap gap-2 mb-4">
-                        {project.tech.map((tech, i) => (
+                        {project.tech.map((tech: string, i: number) => (
                             <span key={i} className="text-sm border px-2 py-1 rounded-md">
                                 {tech}
                             </span>

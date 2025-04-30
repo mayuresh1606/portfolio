@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaGithub, FaExternalLinkAlt, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import ProjectModal from "@/components/ProjectModal";
+import { Project } from "@/interfaces";
 
 const projects = [
     {
@@ -27,9 +28,9 @@ const projects = [
 
 export default function Projects() {
     const [expanded, setExpanded] = useState<number | null>(null);
-    const [selectedProject, setSelectedProject] = useState(null);
+    const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-    const handleOpen = (project) => setSelectedProject(project);
+    const handleOpen = (project: Project) => setSelectedProject(project);
     const handleClose = () => setSelectedProject(null);
 
 
@@ -125,11 +126,13 @@ export default function Projects() {
                     );
                 })}
             </div>
-            <ProjectModal
-                project={selectedProject}
-                isOpen={!!selectedProject}
-                onClose={handleClose}
-            />
+            {
+                selectedProject && <ProjectModal
+                    project={selectedProject}
+                    isOpen={!!selectedProject}
+                    onClose={handleClose}
+                />
+            }
         </section>
     );
 }
