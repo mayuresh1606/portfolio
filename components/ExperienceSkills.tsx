@@ -1,55 +1,175 @@
-// ExperienceSkills.tsx
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { Card, CardContent } from '@/components/ui/card';
-import ExperienceSection from './ExperienceSection';
+import ExperienceSection from "./ExperienceSection";
+import { ShieldCheck, GraduationCap, Cpu, Database, Layout, Shield, Server, Terminal, CheckCircle2 } from "lucide-react";
 
 export default function ExperienceSkills() {
-    return (
-        <div className="w-full px-6 py-12 max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8">
-                {/* Experience Section */}
-                <ExperienceSection />
-                <motion.div
-                    className="space-y-6"
-                    initial={{ x: 100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
-                >
-                    <h3 className="text-4xl font-bold text-primary">Skills</h3>
-                    <Card>
-                        <CardContent className="p-5 space-y-3 text-sm">
-                            <p><span className="font-semibold">Languages:</span> JavaScript (ES6+), TypeScript, Python, SQL</p>
-                            <p><span className="font-semibold">AI & LLM:</span> OpenAI API, RAG, AI Agents, LangGraph, Embeddings, Intent-Based Tool Calling, SSE Streaming</p>
-                            <p><span className="font-semibold">Frontend:</span> React.js, Next.js, ShadCN, Chart.js, Recharts, HTML/CSS</p>
-                            <p><span className="font-semibold">Backend:</span> Node.js, Express.js, FastAPI, GraphQL, Apollo Client, Sequelize, REST APIs</p>
-                            <p><span className="font-semibold">Databases:</span> PostgreSQL, MySQL, MongoDB, ClickHouse, RocksDB</p>
-                            <p><span className="font-semibold">Caching & Messaging:</span> Redis, RabbitMQ</p>
-                            <p><span className="font-semibold">Cloud & DevOps:</span> AWS S3, Git, CI/CD Pipelines, Databricks</p>
-                            <p><span className="font-semibold">Auth & Integrations:</span> Okta SSO, Keycloak, NextAuth, Socket.io, PureSpectrum</p>
-                        </CardContent>
-                    </Card>
+  const stackCategories = [
+    {
+      title: "AI & Agent Orchestration",
+      icon: Cpu,
+      skills: [
+        "OpenAI API",
+        "LangGraph StateGraph",
+        "RAG Retrieval Pipelines",
+        "Intent-Driven Tool Calling",
+        "SSE Token Streaming",
+        "Hierarchical Chunking",
+        "Vector Embeddings",
+        "Grounding & Citation Verification"
+      ]
+    },
+    {
+      title: "Backend & Data Infrastructure",
+      icon: Database,
+      skills: [
+        "FastAPI",
+        "Python",
+        "Node.js & Express",
+        "ClickHouse Time-Series",
+        "PostgreSQL (OLTP)",
+        "RocksDB Caching",
+        "Redis & Materialized Views",
+        "GraphQL & Apollo",
+        "RabbitMQ"
+      ]
+    },
+    {
+      title: "Frontend Engineering",
+      icon: Layout,
+      skills: [
+        "Next.js 15 (App Router)",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS v4",
+        "ShadCN UI",
+        "WebSockets / SSE Clients",
+        "Core Web Vitals Optimization",
+        "Component Architecture"
+      ]
+    },
+    {
+      title: "Enterprise Auth & Cloud",
+      icon: Shield,
+      skills: [
+        "Okta SSO (SAML 2.0)",
+        "Keycloak Auth",
+        "NextAuth",
+        "Role-Based Access Control (RBAC)",
+        "AWS S3 & Cloud Storage",
+        "Docker & Containerization",
+        "CI/CD GitHub Actions",
+        "Databricks"
+      ]
+    }
+  ];
 
-                    <h3 className="text-3xl font-semibold text-primary">Certifications</h3>
-                    <Card>
-                        <CardContent className="p-5 space-y-2 text-sm">
-                            <p className="font-semibold">Claude Certified Architect – Professional</p>
-                            <p className="text-muted-foreground">Anthropic</p>
-                        </CardContent>
-                    </Card>
-
-                    <h3 className="text-3xl font-semibold text-primary">Education</h3>
-                    <Card>
-                        <CardContent className="p-5 space-y-2 text-sm">
-                            <p className="text-muted-foreground">JUNE 2024</p>
-                            <p className="font-semibold">B.E. in Computer Science</p>
-                            <p>University of Mumbai | Vasantdada Patil Pratishthan’s COE</p>
-                            <p className="text-muted-foreground">CGPA: 8.05</p>
-                        </CardContent>
-                    </Card>
-                </motion.div>
-            </div>
+  return (
+    <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-24 border-b border-border/40">
+      {/* 1. Experience Timeline */}
+      <div id="experience" className="space-y-10">
+        <div className="space-y-3 max-w-2xl">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium border border-border/80 bg-muted/50 text-muted-foreground">
+            <Server className="w-3.5 h-3.5 text-primary" />
+            Track Record
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
+            Production Engineering Experience.
+          </h2>
+          <p className="text-base text-muted-foreground leading-relaxed">
+            3+ years designing, building, and deploying real-world software, AI workflows, and high-concurrency platforms.
+          </p>
         </div>
-    );
+
+        <ExperienceSection />
+      </div>
+
+      {/* 2. Technical Stack & Credentials */}
+      <div id="stack" className="space-y-10">
+        <div className="space-y-3 max-w-2xl">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium border border-border/80 bg-muted/50 text-muted-foreground">
+            <Terminal className="w-3.5 h-3.5 text-primary" />
+            Core Capabilities
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground">
+            Technical Stack &amp; Verified Credentials.
+          </h2>
+          <p className="text-base text-muted-foreground leading-relaxed">
+            Technologies, frameworks, and architecture tools utilized in production environments.
+          </p>
+        </div>
+
+        {/* Stack Categories Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {stackCategories.map((cat, idx) => {
+            const Icon = cat.icon;
+            return (
+              <div
+                key={idx}
+                className="p-6 rounded-xl border border-border/70 bg-card hover:border-border transition-all space-y-4"
+              >
+                <div className="flex items-center gap-2.5">
+                  <div className="p-2 rounded-lg bg-primary/10 text-primary">
+                    <Icon className="w-4 h-4" />
+                  </div>
+                  <h3 className="text-lg font-bold text-foreground">
+                    {cat.title}
+                  </h3>
+                </div>
+
+                <div className="flex flex-wrap gap-2 pt-1">
+                  {cat.skills.map((skill, sIdx) => (
+                    <span
+                      key={sIdx}
+                      className="px-2.5 py-1 rounded-md text-xs font-mono bg-muted text-foreground border border-border/60 hover:border-primary/50 transition-colors"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Credentials and Education Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+          {/* Anthropic Certification */}
+          <div className="p-6 rounded-xl border border-blue-500/30 bg-blue-500/5 dark:bg-blue-950/10 space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-[11px] font-mono uppercase tracking-wider text-blue-600 dark:text-blue-400 font-semibold flex items-center gap-1.5">
+                <ShieldCheck className="w-4 h-4" />
+                Industry Certification
+              </span>
+              <span className="text-xs font-mono text-muted-foreground">Anthropic</span>
+            </div>
+            <h4 className="text-xl font-bold text-foreground">
+              Claude Certified Architect – Professional
+            </h4>
+            <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+              Certified validation in prompt architecture, agentic orchestration, tool-calling systems, 
+              and enterprise LLM solution design.
+            </p>
+          </div>
+
+          {/* Academic Background */}
+          <div className="p-6 rounded-xl border border-border/70 bg-card space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-[11px] font-mono uppercase tracking-wider text-primary font-semibold flex items-center gap-1.5">
+                <GraduationCap className="w-4 h-4" />
+                Academic Background
+              </span>
+              <span className="text-xs font-mono text-muted-foreground">June 2024</span>
+            </div>
+            <h4 className="text-xl font-bold text-foreground">
+              B.E. in Computer Science &amp; Engineering
+            </h4>
+            <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+              University of Mumbai (Vasantdada Patil Pratishthan’s COE) • <span className="font-semibold text-foreground">CGPA: 8.05</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

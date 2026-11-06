@@ -1,23 +1,28 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
+import SystemsArchitecture from "@/components/SystemsArchitecture";
 import Projects from "@/components/Projects";
+import ExperienceSkills from "@/components/ExperienceSkills";
 import ScrollToTop from "@/components/ScrollToTop";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import ExperienceSkills from "@/components/ExperienceSkills";
 
 export default function HomePage() {
   return (
-    <main>
+    <div
+      id="top"
+      className="min-h-screen flex flex-col bg-background text-foreground antialiased selection:bg-primary/20 selection:text-foreground"
+    >
       <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <ExperienceSkills />
-      <ScrollToTop />
-      <Contact />
+      <main className="flex-1">
+        <Hero />
+        <SystemsArchitecture />
+        <Projects />
+        <ExperienceSkills />
+        <Contact />
+      </main>
       <Footer />
-    </main>
+      <ScrollToTop />
+    </div>
   );
 }
