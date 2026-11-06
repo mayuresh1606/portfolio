@@ -20,10 +20,22 @@ export default function ExperienceSkills() {
                     <h3 className="text-4xl font-bold text-primary">Skills</h3>
                     <Card>
                         <CardContent className="p-5 space-y-3 text-sm">
-                            <p><span className="font-semibold">Frontend:</span> React.js, Next.js, TypeScript</p>
-                            <p><span className="font-semibold">Backend:</span> Node.js, Express, GraphQL</p>
-                            <p><span className="font-semibold">Databases:</span> MySQL, PostgreSQL, MongoDB, ClickHouse</p>
-                            <p><span className="font-semibold">DevOps:</span> AWS S3, Redis, RabbitMQ</p>
+                            <p><span className="font-semibold">Languages:</span> JavaScript (ES6+), TypeScript, Python, SQL</p>
+                            <p><span className="font-semibold">AI & LLM:</span> OpenAI API, RAG, AI Agents, LangGraph, Embeddings, Intent-Based Tool Calling, SSE Streaming</p>
+                            <p><span className="font-semibold">Frontend:</span> React.js, Next.js, ShadCN, Chart.js, Recharts, HTML/CSS</p>
+                            <p><span className="font-semibold">Backend:</span> Node.js, Express.js, FastAPI, GraphQL, Apollo Client, Sequelize, REST APIs</p>
+                            <p><span className="font-semibold">Databases:</span> PostgreSQL, MySQL, MongoDB, ClickHouse, RocksDB</p>
+                            <p><span className="font-semibold">Caching & Messaging:</span> Redis, RabbitMQ</p>
+                            <p><span className="font-semibold">Cloud & DevOps:</span> AWS S3, Git, CI/CD Pipelines, Databricks</p>
+                            <p><span className="font-semibold">Auth & Integrations:</span> Okta SSO, Keycloak, NextAuth, Socket.io, PureSpectrum</p>
+                        </CardContent>
+                    </Card>
+
+                    <h3 className="text-3xl font-semibold text-primary">Certifications</h3>
+                    <Card>
+                        <CardContent className="p-5 space-y-2 text-sm">
+                            <p className="font-semibold">Claude Certified Architect – Professional</p>
+                            <p className="text-muted-foreground">Anthropic</p>
                         </CardContent>
                     </Card>
 
@@ -33,16 +45,7 @@ export default function ExperienceSkills() {
                             <p className="text-muted-foreground">JUNE 2024</p>
                             <p className="font-semibold">B.E. in Computer Science</p>
                             <p>University of Mumbai | Vasantdada Patil Pratishthan’s COE</p>
-                            <p className="text-muted-foreground">8.45 CGPA</p>
-                        </CardContent>
-                    </Card>
-
-                    <Card>
-                        <CardContent className="p-5 space-y-2 text-sm">
-                            <p className="text-muted-foreground">JUNE 2020</p>
-                            <p className="font-semibold">Diploma in Computer Science</p>
-                            <p>MSBTE | Vidyalankar Polytechnic</p>
-                            <p className="text-muted-foreground">74.97%</p>
+                            <p className="text-muted-foreground">CGPA: 8.05</p>
                         </CardContent>
                     </Card>
                 </motion.div>

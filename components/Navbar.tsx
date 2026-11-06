@@ -10,15 +10,15 @@ export default function Navbar() {
         <nav className="w-full border-b px-6 py-4 flex justify-between items-center relative">
             {/* Left Side: Title */}
             <div className="flex items-center gap-2">
-                {/* <img src="/Mayuresh Profile.jpeg" alt="" width="40" height="40" className="rounded-md" /> */}
-                <span className="font-semibold text-lg">Web Developer</span>
+                <span className="font-semibold text-lg">Mayuresh Ovhal</span>
             </div>
 
             {/* Desktop Links */}
-            <ul className="hidden md:flex gap-8 text-sm font-medium">
+            <ul className="hidden md:flex gap-8 text-sm font-medium items-center">
                 <a href="#about"><li className="hover:text-primary transition-colors">About</li></a>
                 <a href="#projects"><li className="hover:text-primary transition-colors">Projects</li></a>
                 <a href="#contact"><li className="hover:text-primary transition-colors">Contact</li></a>
+                <a href="/Mayuresh_Resume.pdf" target="_blank" rel="noreferrer"><li className="hover:text-primary transition-colors">Resume</li></a>
             </ul>
 
             {/* Mode Toggle */}
@@ -41,6 +41,7 @@ export default function Navbar() {
                         <a href="#about" onClick={() => setIsOpen(false)}><li>About</li></a>
                         <a href="#projects" onClick={() => setIsOpen(false)}><li>Projects</li></a>
                         <a href="#contact" onClick={() => setIsOpen(false)}><li>Contact</li></a>
+                        <a href="/Mayuresh_Resume.pdf" target="_blank" rel="noreferrer" onClick={() => setIsOpen(false)}><li>Resume</li></a>
                     </ul>
                 </div>
             )}

@@ -7,49 +7,40 @@ import { Project } from "@/interfaces";
 
 const projects = [
     {
-        title: "Web Analytics Tracker",
-        description: "A high-performance tracking system for real-time analytics.",
+        title: "RFP Agent",
+        description: "AI-powered proposal platform for document retrieval and workflow generation.",
         details:
-            "Engineered a scalable web analytics system that validates and deduplicates incoming events, stores unique entries in RocksDB, and processes them using RabbitMQ. Designed logic to prioritize 'store' events before 'track' events, and implemented a requeue mechanism for unknown events to maintain data consistency.",
-        tech: ["Node.js", "RocksDB", "RabbitMQ", "Express", "Redis"],
-        github: "#", // Private or internal, leave as #
+            "Built an AI-powered proposal platform combining document retrieval, chunk-based RAG, intent-driven tool execution, database queries, LLM-assisted proposal building, and SSE-based real-time agent streaming.",
+        tech: ["Python", "FastAPI", "OpenAI API", "RAG", "SSE", "PostgreSQL", "LangGraph", "Okta"],
+        github: "#",
         live: "#",
     },
     {
-        title: "Putler",
-        description: "Re-engineering the core architecture of a business analytics product.",
+        title: "Sample Management Console",
+        description: "Operational survey and quota management system with AI-assisted insights.",
         details:
-            "Ported the existing Angular-based frontend to a modern React + Next.js stack, enhancing performance and UX. Migrated the backend from a socket-based system to a GraphQL + PostgreSQL-based architecture for better scalability, maintainability, and developer experience. Focused on modularizing the codebase for easier deployments and version control.",
-        tech: ["React", "Next.js", "GraphQL", "PostgreSQL"],
+            "Built a survey operations platform for retrieval and creation, quota monitoring, materialized-view reporting, Redis caching, automated data refreshes, and AI-generated operational insights for business teams.",
+        tech: ["Python", "FastAPI", "PostgreSQL", "Redis", "AI Agents", "PureSpectrum"],
+        github: "#",
+        live: "#",
+    },
+    {
+        title: "Putler Analytics",
+        description: "Production SaaS analytics platform with real-time dashboards and custom tracking.",
+        details:
+            "Developed a production analytics platform with real-time dashboards, a custom analytics engine, and cross-database synchronization between PostgreSQL and ClickHouse for large-scale time-series workloads.",
+        tech: ["Next.js", "GraphQL", "ClickHouse", "PostgreSQL", "RocksDB"],
         github: "#",
         live: "https://demo.putler.com",
     },
     {
-        title: "Ladki Bahin",
-        description: "Government-backed women's safety application for Maharashtra state.",
+        title: "Ladki Bahin Yojna Portal",
+        description: "Government-scale platform handling high-traffic public services.",
         details:
-            "Led development of the admin panel using Sequelize, Express, and Node.js, handling dynamic filtering, analytics, and user management. Optimized API performance with Redis caching to support over 100K daily users. Extracted large datasets for reporting and data analysis. Deployed and maintained infrastructure through secure server operations using PuTTY.",
-        tech: ["React.js", "Node.js", "Sequelize", "Redis", "MySQL"],
+            "Built a Maharashtra state government platform handling high concurrent traffic with Redis caching, MySQL reporting, and resilient APIs for public-facing operations.",
+        tech: ["React.js", "Node.js", "MySQL", "Redis"],
         github: "#",
         live: "https://ladakibahin.maharashtra.gov.in/",
-    },
-    {
-        title: "Learning Management System (LMS)",
-        description: "Custom LMS platforms tailored for educational clients.",
-        details:
-            "Built and integrated scalable back-end APIs using Sequelize.js and MySQL, enhancing performance through optimized queries and dynamic filtering. Developed responsive front-ends in React.js and Next.js with TypeScript, supporting features such as Excel export and personalized dashboards. Delivered customized functionality for various institutions across multiple live LMS deployments.",
-        tech: ["Next.js", "React.js", "TypeScript", "MySQL", "Sequelize"],
-        github: "#",
-        live: "https://examination.myglaonline.com/",
-    },
-    {
-        title: "GT20",
-        description: "Official web platform for the Global T20 Canada Cricket League.",
-        details:
-            "Designed and maintained back-end services using Node.js and Express. Implemented secure user authentication, authorization, and session management. Used AWS SDK for media storage on S3. Supported both client-facing and internal admin panels, collaborating with the front-end team for seamless integration and robust UX.",
-        tech: ["Node.js", "Express", "MySQL", "AWS S3"],
-        github: "#",
-        live: "https://gt20.ca/",
     }
 ];
 

@@ -7,14 +7,28 @@ import { Button } from '@/components/ui/button';
 
 const experiences = [
     {
+        title: "Software Developer | NeuIQ",
+        period: "APR 2026 – PRESENT",
+        location: "Mumbai, India",
+        responsibilities: [
+            "Built AI-powered proposal workflows using OpenAI APIs, RAG retrieval, intent-based tool calling, and database querying for context-aware RFP search and generation.",
+            "Designed and implemented document chunking and retrieval pipelines to fetch relevant RFP content from a knowledge base for LLM-assisted workflows.",
+            "Integrated an SSE-based streaming API for AI agents to deliver incremental responses and workflow updates to the frontend in real time.",
+            "Integrated Okta SSO for secure enterprise authentication and contributed backend APIs and agent workflows for proposal retrieval and generation.",
+            "Reorganized backend services for survey lifecycle management, including survey retrieval, creation automation, and reporting workflows for the PureSpectrum platform.",
+            "Built materialized views, Redis-based caching, and automated refresh workflows to improve access to frequently queried survey and quota data."
+        ]
+    },
+    {
         title: "Software Developer | StoreApps",
-        period: "FEB 2025 – PRESENT",
+        period: "FEB 2025 – MAR 2026",
         location: "Kandivali, Mumbai",
         responsibilities: [
-            "Built a robust web analytics tracker with data validation, deduplication using RocksDB, and message queuing for precise event processing.",
-            "Handled sequencing of store and track events, requeuing unknown track events to ensure data integrity.",
-            "Ported legacy Putler frontend from Angular to modern React for enhanced UX and performance.",
-            "Migrated Putler backend from socket-based infrastructure to a PostgreSQL + GraphQL-based scalable system."
+            "Architected the frontend migration of the Putler SaaS analytics platform to Next.js, ShadCN, Apollo Client, and Socket.io, improving responsiveness and reducing component load times.",
+            "Shipped a custom web analytics engine covering session tracking, event pipelines, RocksDB caching, and synchronization between PostgreSQL and ClickHouse.",
+            "Built and optimized Node.js backend services for multi-tenant analytics workloads and improved query performance on ClickHouse for large time-series datasets.",
+            "Implemented Keycloak-based authentication with NextAuth, built custom auth pages, and developed event-driven synchronization from Keycloak to PostgreSQL.",
+            "Optimized frontend bundle size using code splitting and lazy loading, reducing initial page load time by 40% and improving Core Web Vitals."
         ]
     },
     {
@@ -22,22 +36,11 @@ const experiences = [
         period: "OCT 2023 – JAN 2025",
         location: "Powai, Mumbai",
         responsibilities: [
-            "Built full-stack features using Sequelize, Express, Node.js, and React.js.",
-            "Optimized APIs to handle 100K+ daily users, achieving a 35% reduction in latency.",
-            "Implemented Redis caching for faster data retrieval and reduced DB load.",
-            "Enabled dynamic filtering via complex MySQL queries, enhancing data interactivity.",
-            "Utilized AWS SDK for managing S3 buckets for media storage and access.",
-            "Managed secure authentication, sessions, and authorization for user access control.",
-            "Handled server deployments via SSH using PuTTY and collaborated with frontend teams to improve UX."
-        ]
-    },
-    {
-        title: "Web Developer Intern | Getfly Technologies",
-        period: "JUNE 2023",
-        location: "Sion, Mumbai",
-        responsibilities: [
-            "Worked on backend APIs using Node.js and MongoDB.",
-            "Integrated frontend components and API calls using React.js."
+            "Built end-to-end government and education platforms using React.js, Node.js, Express, Sequelize, and MySQL for high-traffic products with Redis caching and bulk reporting.",
+            "Built a data validation and sanitization pipeline processing 10K+ form submissions per hour with multi-layer validation across client, API, and database layers.",
+            "Developed modular REST APIs and revamped frontends in Next.js and TypeScript with dynamic filtering, live data, and bulk Excel exports for institutional platforms.",
+            "Engineered a role-based access control system for 50K+ students and 500+ faculty members, including automated assignment grading workflows.",
+            "Built secure authentication, session handling, normalized schemas, and AWS S3-backed media delivery for the GT20 cricket platform."
         ]
     }
 ];

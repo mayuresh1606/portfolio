@@ -8,7 +8,12 @@ export default function Hero() {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["Full Stack Developer", "Open Source Enthusiast", "Tech Explorer"],
+            strings: [
+                "Full-Stack AI Engineer",
+                "Full-Stack Developer",
+                "AI & SaaS Builder",
+                "Claude Certified Architect",
+            ],
             typeSpeed: 60,
             backSpeed: 30,
             loop: true,
@@ -20,9 +25,12 @@ export default function Hero() {
 
     return (
         <div className="flex flex-col md:flex-row w-full min-h-[90vh] px-4 md:px-6 gap-8">
-            <div className="flex flex-col justify-center text-center w-full md:w-1/2 pt-8 md:pt-0">
+            <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left w-full md:w-1/2 pt-8 md:pt-0">
+                <span className="inline-flex items-center rounded-full border border-primary/40 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.12em] text-primary">
+                    Claude Certified Architect – Professional
+                </span>
                 <motion.h2
-                    className="text-3xl md:text-4xl lg:text-5xl font-bold"
+                    className="text-3xl md:text-4xl lg:text-5xl font-bold mt-4"
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false }}

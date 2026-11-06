@@ -7,6 +7,8 @@ import {
     SiTailwindcss,
     SiTypescript,
     SiGithub,
+    SiPython,
+    SiOpenai,
 } from "react-icons/si";
 
 export default function About() {
@@ -27,9 +29,11 @@ export default function About() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
             >
-                I'm a passionate Full Stack Developer who loves building fast, accessible,
-                and delightful web experiences. I specialize in creating responsive web
-                apps with React, Next.js, and Node.js.
+                I'm a Full-Stack AI Engineer with 3+ years of experience building scalable
+                web applications, analytics platforms, and AI-powered systems. I design and
+                ship performant products using React, Next.js, Node.js, Python, FastAPI,
+                and modern LLM tooling including OpenAI APIs, RAG pipelines, AI agents,
+                and real-time streaming experiences.
             </motion.p>
 
             <motion.div
@@ -41,6 +45,8 @@ export default function About() {
                 <SiNextdotjs />
                 <SiReact />
                 <SiNodedotjs />
+                <SiPython />
+                <SiOpenai />
                 <SiTailwindcss />
                 <SiTypescript />
                 <SiGithub />
