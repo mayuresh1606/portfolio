@@ -76,8 +76,8 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
-    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-border/40">
-      <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-border/40">
+      <div id="projects" className="scroll-mt-20 flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
         <div className="space-y-3 max-w-2xl">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium border border-border/80 bg-muted/50 text-muted-foreground">
             <Layers className="w-3.5 h-3.5 text-primary" />

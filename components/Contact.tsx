@@ -14,8 +14,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      <div className="rounded-2xl border border-border/80 bg-card p-8 sm:p-12 shadow-xl relative overflow-hidden">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div id="contact" className="scroll-mt-20 rounded-2xl border border-border/80 bg-card p-8 sm:p-12 shadow-xl relative overflow-hidden">
         {/* Subtle accent glow */}
         <div 
           aria-hidden="true" 

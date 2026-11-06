@@ -67,7 +67,7 @@ export default function ExperienceSkills() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-24 border-b border-border/40">
       {/* 1. Experience Timeline */}
-      <div id="experience" className="space-y-10">
+      <div id="experience" className="scroll-mt-20 space-y-10">
         <div className="space-y-3 max-w-2xl">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium border border-border/80 bg-muted/50 text-muted-foreground">
             <Server className="w-3.5 h-3.5 text-primary" />
@@ -85,7 +85,7 @@ export default function ExperienceSkills() {
       </div>
 
       {/* 2. Technical Stack & Credentials */}
-      <div id="stack" className="space-y-10">
+      <div id="stack" className="scroll-mt-20 space-y-10">
         <div className="space-y-3 max-w-2xl">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-medium border border-border/80 bg-muted/50 text-muted-foreground">
             <Terminal className="w-3.5 h-3.5 text-primary" />
